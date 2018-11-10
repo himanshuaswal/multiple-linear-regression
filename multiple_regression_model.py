@@ -4,3 +4,6 @@ from sklearn.datasets import load_boston
 boston_data = load_boston()
 x = boston_data['data']
 y = boston_data['target']
+# Make and fit the linear regression model
+model = LinearRegression()
+model.fit(x, y)
